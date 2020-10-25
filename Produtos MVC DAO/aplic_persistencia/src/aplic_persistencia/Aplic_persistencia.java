@@ -26,6 +26,7 @@ public class Aplic_persistencia {
             System.out.println("1 Cadastrar produto\n");
             System.out.println("2 Listar produtos\n");
             System.out.println("3 Pesquisar produtos\n");
+            System.out.println("4 Sair\n");
             int Opcao = input.nextInt();
             switch(Opcao){
                 case 1: System.out.println("Você selecionou cadastrar produto\n");
@@ -43,6 +44,8 @@ public class Aplic_persistencia {
                         int id = input.nextInt();
                         produto.pesquisarProduto(id);
                 break;
+                case 4: System.out.println("Até outra vez <3");
+                        continuar = false;
                 default: System.out.println("\n Opção invalida \n\n\n");
                 
             }
